@@ -1,0 +1,94 @@
+# ============================================================
+#  Rust / Cargo
+# ============================================================
+/target/
+**/*.rs.bk
+*.pdb
+
+# This is a binary (application) project, so Cargo.lock should be committed.
+# If this ever becomes a library, uncomment the line below:
+# Cargo.lock
+
+# ============================================================
+#  Secrets (never commit these)
+# ============================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+id_rsa*
+id_ed25519*
+secrets.*
+credentials.*
+*.secret
+config.local.*
+*.local.toml
+*.local.json
+
+# ============================================================
+#  Engine-generated data
+# ============================================================
+# User scripts and test models (created on first run)
+/scripts/
+/models/
+/saves/
+/cache/
+/logs/
+*.log
+
+# ============================================================
+#  Editors / IDEs
+# ============================================================
+.vscode/
+.vs/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+.fleet/
+.history/
+
+# ============================================================
+#  Operating system
+# ============================================================
+.DS_Store
+.AppleDouble
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ============================================================
+#  Profiling / debugging
+# ============================================================
+*.profraw
+*.profdata
+flamegraph.svg
+perf.data*
+*.trace
+core
+core.*
+
+# ============================================================
+#  Temporary / backup files
+# ============================================================
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+/tmp/
+
+# ============================================================
+#  External tooling
+# ============================================================
+node_modules/
+__pycache__/
+*.pyc
