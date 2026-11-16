@@ -117,8 +117,8 @@ Instead of juggling separate programs for building scenes, shaping models and wr
 rustup update
 
 # 2. Clone
-git clone https://github.com/danielSeSa/Load-Engine.git
-cd Load-Engine
+git clone https://github.com/danielSeSa/LoadEngine.git
+cd LoadEngine
 
 # 3. Run (release mode is much smoother)
 cargo run --release
