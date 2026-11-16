@@ -7,7 +7,7 @@ use egui::{
 use glam::{Mat4, Vec3};
 
 use crate::game::{
-    Component, EntityId, GameState, GizmoDrag, LightKind, PlayMode, Shading, Tool,
+    Component, EntityId, GameState, GizmoDrag, LightKind, PlayMode, Tool,
 };
 
 const AXIS_COLORS: [Color32; 3] = [
@@ -26,6 +26,7 @@ struct View {
     view: Mat4,
     proj: Mat4,
     vp: Mat4,
+    #[allow(dead_code)]
     eye: Vec3,
     rect: Rect,
 }

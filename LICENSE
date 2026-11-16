@@ -1,0 +1,144 @@
+LoadEngine Community Source-Available License (LCSAL) v1.0
+
+Copyright © 2026 Seyed Daniel Seyed Saadat. All rights reserved.
+
+LoadEngine, including its original source code, architecture, design, name, logo, branding, and official project identity, is the exclusive intellectual property of Seyed Daniel Seyed Saadat.
+
+This license grants users broad permissions to use and contribute to LoadEngine while preserving the original author's ownership, branding, and control over the engine.
+
+This is a source-available license. It is not an open-source license under the Open Source Initiative (OSI) definition.
+
+1. Permission to Use
+
+Anyone may freely access, download, compile, run, and use LoadEngine for personal, educational, research, and commercial purposes, subject to the conditions of this license.
+
+You are permitted to:
+- Use LoadEngine to create games, applications, and interactive projects.
+- Sell, publish, distribute, and commercially monetize games and projects created using LoadEngine.
+- Use LoadEngine in commercial or non-commercial development workflows.
+- Modify your local copy of LoadEngine for personal or internal project use.
+- Create custom tools, plugins, extensions, and components that work with LoadEngine.
+- Use the engine without paying royalties or obtaining individual permission.
+
+No royalties or fees are required for creating or selling games and other products made with LoadEngine.
+
+2. Source Code Access and Modification
+
+The source code is publicly available through the official repository:
+https://github.com/danielSeSa/LoadEngine
+
+Anyone may inspect, study, and modify the source code for permitted purposes. You may maintain private modifications and use them in your own internal projects.
+
+However, access to the source code does not grant permission to independently publish, redistribute, sublicense, or sell the LoadEngine source code or modified versions of the engine.
+
+3. Contributions and Bug Fixes
+
+Community contributions are welcome. Anyone may:
+- Report bugs and technical issues.
+- Submit bug fixes and performance optimizations.
+- Suggest improvements and new features.
+- Fork the official GitHub repository strictly for the purpose of developing and submitting Pull Requests to the official repository.
+
+All contributions are subject to review and approval by the project owner. The project owner reserves the right to accept, reject, modify, or decline any contribution at their sole discretion.
+
+Contributor Rights and Grant of License:
+Contributors retain copyright ownership of their original contributions. However, by submitting a contribution (including Pull Requests, patches, or code snippets) to the official LoadEngine repository, contributors grant Seyed Daniel Seyed Saadat a perpetual, worldwide, non-exclusive, irrevocable, royalty-free, transferable, and sublicensable license to:
+- Use, reproduce, modify, and adapt the contribution.
+- Incorporate the contribution into LoadEngine.
+- Distribute and commercially license the contribution as part of LoadEngine.
+- Maintain, improve, and develop the contribution in future versions.
+
+Contributors warrant that they have the legal right to submit everything they contribute and that their contributions do not infringe upon any third-party rights.
+
+4. Redistribution and Forking Restrictions
+
+Without prior written permission from the copyright owner, you may not:
+- Independently redistribute, host, or publish the LoadEngine source code outside of a standard GitHub fork intended for contributing back to the official repository.
+- Rebrand, repackage, or publish modified versions or forks of LoadEngine as an independent game engine, software suite, or competing product.
+- Distribute standalone copies of the engine editor/binaries or modified versions thereof.
+- Sell, sublicense, rent, or commercially distribute LoadEngine itself.
+- Remove, obscure, or misrepresent the original copyright and licensing notices.
+
+These restrictions do not prohibit distributing compiled games and applications created with LoadEngine under Section 5.
+
+5. Games and Projects Created with LoadEngine (Mandatory Attribution)
+
+You are free to create, publish, distribute, and commercially sell games and other applications developed using LoadEngine.
+
+You may:
+- Sell games made with LoadEngine on any platform (such as Steam, itch.io, Epic Games Store, mobile stores, or independent platforms).
+- Keep your game's source code and assets private.
+- Use your own branding, trademarks, and intellectual property for your games.
+- Distribute compiled runtime components of LoadEngine strictly as bundled within and necessary to operate your game or application.
+
+Mandatory Attribution Requirement:
+Any game or interactive application created with LoadEngine and distributed publicly or commercially MUST clearly display the "Made with LoadEngine" notice or the official LoadEngine logo/splash screen at the startup sequence (splash screen) of the application, unless a prior written exemption is obtained from the copyright owner.
+
+You do not need to pay royalties to the LoadEngine copyright owner for games or applications created using the engine.
+
+6. Ownership and Branding
+
+All original LoadEngine intellectual property remains the exclusive property of Seyed Daniel Seyed Saadat, including:
+- The LoadEngine name and trademarks.
+- The official logo, icons, and visual identity.
+- The original source code, architecture, and design.
+- Official project materials, website, and documentation.
+
+You may not:
+- Claim to be the original creator or owner of LoadEngine.
+- Register or use confusingly similar names, domains, or branding to impersonate the official project.
+- Present an unofficial fork or derivative work as the official LoadEngine product.
+- Use the official LoadEngine logo or branding to imply official endorsement or partnership without written permission.
+
+7. Acceptable Use and Prohibition of Misuse
+
+You may not use LoadEngine to develop, distribute, or facilitate:
+- Malware, spyware, ransomware, or any malicious software.
+- Illegal content, unlawful surveillance, or activities that violate applicable local, national, or international laws.
+- Any software designed to infringe upon the intellectual property, privacy, or legal rights of others.
+
+Any misuse of the engine or violation of this section constitutes an immediate breach of this license.
+
+8. Independent Projects and Extensions
+
+You may develop your own independent tools, plugins, asset packs, and extensions that interact with LoadEngine. You retain full ownership of your independently created work, provided that it does not contain or redistribute LoadEngine source code beyond the permissions granted by this license.
+
+9. Third-Party Components
+
+LoadEngine utilizes third-party open-source libraries and dependencies (such as wgpu, egui, winit, and glam). Such components remain subject to their respective licenses and copyright notices. Nothing in this license overrides or replaces the licensing terms of third-party software.
+
+10. No Transfer of Ownership
+
+Downloading, using, modifying, contributing to, or creating projects with LoadEngine does not transfer ownership of the original engine or its intellectual property. All rights not expressly granted by this license are reserved by Seyed Daniel Seyed Saadat.
+
+11. Disclaimer of Warranty and Liability
+
+LoadEngine is provided "AS IS", without warranties of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement, to the maximum extent permitted by applicable law.
+
+In no event shall the copyright owner be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, loss of data, loss of profits, or business interruption) arising out of the use or inability to use the software.
+
+12. Termination
+
+Any violation of the restrictions, attribution requirements, or acceptable use conditions of this license automatically and immediately terminates all rights and permissions granted to the violating party. Upon termination, you must cease all use and distribution of LoadEngine and any projects distributed in violation of Section 5.
+
+Termination does not revoke licenses previously granted to the copyright owner by contributors under Section 3.
+
+13. License Changes
+
+The copyright owner reserves the right to update, modify, or replace this license for future releases of LoadEngine. Versions already released under a specific version of this license remain governed by that version's terms unless otherwise agreed.
+
+14. Severability
+
+If any provision of this license is held to be invalid, illegal, or unenforceable under applicable law, that provision shall be modified to the minimum extent necessary to make it enforceable, and the remaining provisions of this license shall remain in full force and effect.
+
+15. No Agency or Partnership
+
+Nothing in this license creates a partnership, joint venture, agency, fiduciary, or employment relationship between you and the copyright owner.
+
+16. Official Project Information
+
+Project: LoadEngine
+Author & Copyright Owner: Seyed Daniel Seyed Saadat
+Official Repository: https://github.com/danielSeSa/LoadEngine
+Official Website: https://danielseyedsaadat.com
+License: LoadEngine Community Source-Available License (LCSAL) v1.0

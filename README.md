@@ -2,8 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff9628,100:4b7df5&height=200&section=header&text=LoadEngine&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Game%20Engine%20%C2%B7%20Mesh%20Modeler%20%C2%B7%20Code%20Editor%20%E2%80%94%20in%20one%20Rust%20app&descAlignY=60&descSize=18" alt="LoadEngine banner"/>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=FF9628&center=true&vCenter=true&width=700&lines=Built+with+Rust+%F0%9F%A6%80;Compose+scenes+and+hit+Play+%F0%9F%8E%AE;Shape+meshes+inside+the+engine+%F0%9F%A7%8A;Model+it.+See+it+live.+Play+it+%E2%9A%A1;Open+source.+Hack+it.+Extend+it." alt="Typing animation"/></a>
-
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=FF9628&center=true&vCenter=true&width=700&lines=Built+with+Rust+%F0%9F%A6%80;Compose+scenes+and+hit+Play+%F0%9F%8E%AE;Shape+meshes+inside+the+engine+%F0%9F%A7%8A;Model+it.+See+it+live.+Play+it+%E2%9A%A1;Source-available.+Free+to+create.+Built+to+extend." alt="Typing animation"/></a>
 <br/>
 
 ![Rust](https://img.shields.io/badge/Rust-1.85%2B-orange?style=for-the-badge&logo=rust)
@@ -117,8 +116,8 @@ Instead of juggling separate programs for building scenes, shaping models and wr
 rustup update
 
 # 2. Clone
-git clone https://github.com/danielSeSa/Load-Engine.git
-cd Load-Engine
+git clone https://github.com/danielSeSa/LoadEngine.git
+cd LoadEngine
 
 # 3. Run (release mode is much smoother)
 cargo run --release
@@ -524,7 +523,7 @@ Edit `KEYWORDS` / `TYPES` in `editor/lexer.rs` or add a new `Tok` kind and a col
 - 🧱 **Pure core, thin UI.** Everything important can be unit-tested without a window.
 - 💾 **Memory-conscious.** `u32` indices, cached edge tables, reused per-frame buffers, bounded undo history, size limits on heavy operators (e.g. Subdivide).
 - 🔌 **Replaceable parts.** The renderer, scripting and storage are isolated so they can be swapped without rewriting the rest.
-- 🧪 **Original code.** Every algorithm is implemented from scratch, from general knowledge of the techniques. Nothing is copied from other projects, which keeps the licensing of LoadEngine clean and free.
+- 🧪 **Original code.** Every algorithm is implemented from scratch, from general knowledge of the techniques. Nothing is copied from other projects, ensuring the intellectual property and licensing of LoadEngine remain clean and protected.
 
 ---
 
@@ -577,30 +576,37 @@ Being honest helps contributors pick impactful work:
 
 ## 🤝 Contributing
 
-Contributions of all sizes are welcome — bug reports, docs, tests, features.
+Contributions of all sizes are welcome — bug reports, docs, tests, and engine features[cite: 3].
 
-1. 🍴 **Fork** the repo and create a branch: `git checkout -b feature/my-feature`
-2. 🧪 Make sure it builds and tests pass: `cargo test`
-3. 🎨 Format and lint:
+1. 🍴 **Fork** the repo (solely for developing and submitting contributions to this official repository) and create a branch: `git checkout -b feature/my-feature`[cite: 3]
+2. 🧪 Make sure it builds and tests pass: `cargo test`[cite: 3]
+3. 🎨 Format and lint[cite: 3]:
    ```bash
    cargo fmt
    cargo clippy
    ```
-4. 💬 Commit with a clear message and open a **Pull Request** describing _what_ and _why_.
+4. 💬 Commit with a clear message and open a **Pull Request** describing *what* and *why*[cite: 3].
 
-**Guidelines**
+**Guidelines & Contributor Agreement**
 
-- Put logic in the pure modules, drawing in `ui/`.
-- Add a unit test for any new topology/text algorithm.
-- Do **not** copy code you don't have the right to use (for example from GPL-licensed projects). Implement algorithms from your own understanding or from permissively licensed sources, and credit them.
-- Never commit secrets, personal paths or large binary assets.
-- When reporting a bug, include OS, GPU, Rust version (`rustc --version`) and the full error output (remove your personal file paths first).
+- Put logic in the pure modules (`game/`, `modeling/`, `editor/`), and drawing/input in `ui/`[cite: 3].
+- Add a unit test for any new topology or text algorithm[cite: 3].
+- Do **not** copy code from third-party projects (especially GPL/AGPL-licensed projects). Implement algorithms from your own understanding or permissively licensed sources[cite: 3].
+- Never commit secrets, personal paths, or large binary assets[cite: 3].
+- **License Agreement:** By submitting a Pull Request or contribution to LoadEngine, you agree to the terms of Section 3 of the [LoadEngine Community Source-Available License (LCSAL) v1.0](LICENSE) and grant the project owner full rights to integrate, maintain, and distribute your contribution as part of LoadEngine.
 
-🌱 **Good first issues:** fix a typo in a tooltip, add a primitive, add a keyboard shortcut, write a test for a mesh operator, improve the README.
+🌱 **Good first issues:** fix a typo in a tooltip, add a primitive, add a keyboard shortcut, write a test for a mesh operator, or improve the documentation[cite: 3].
 
 ---
 
 ## 📄 License
+
+LoadEngine is licensed under the **LoadEngine Community Source-Available License (LCSAL) v1.0** — see the [LICENSE](LICENSE) file for full details.
+
+- ✅ **Free to use** for personal, educational, and commercial games/projects (zero royalties).
+- ✅ **Source-available** — inspect the code, submit bug fixes, and contribute via Pull Requests.
+- ⚠️ **Attribution required** — distributed games must display the *"Made with LoadEngine"* splash screen or logo.
+- ❌ **No redistribution or rebranding** — you may not republish or sell the engine itself or present a fork as an independent engine.
 
 
 

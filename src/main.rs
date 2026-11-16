@@ -1,3 +1,6 @@
+// Copyright (c) 2026 Seyed Daniel Seyed Saadat.
+// Licensed under the LoadEngine Community Source-Available License (LCSAL) v1.0.
+
 #![allow(float_literal_f32_fallback)]
 
 mod editor;
@@ -57,7 +60,7 @@ fn main() {
                                 }
                                 Err(e) => eprintln!("Render error: {:?}", e),
                             }
-                            // egui می‌گوید کی دوباره رسم شود
+                            
                             let d = state.repaint_delay();
                             wake = None;
                             if d.is_zero() {

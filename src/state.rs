@@ -1,3 +1,6 @@
+// Copyright (c) 2026 Seyed Daniel Seyed Saadat.
+// Licensed under the LoadEngine Community Source-Available License (LCSAL) v1.0.
+
 use std::sync::Arc;
 use std::time::Duration;
 use winit::window::Window;
@@ -15,13 +18,11 @@ pub enum Workspace {
     CodeEditor,
 }
 
-/// داده‌های خالصِ موتور (بدون وابستگی به GPU)
 pub struct AppState {
     pub active_workspace: Workspace,
     pub editor: EditorState,
     pub game: GameState,
     pub modeling: ModelState,
-    /// پل بین UI و رندر GPU
     pub link: Link,
 }
 
@@ -127,7 +128,6 @@ impl State {
         );
         let mut egui_renderer = egui_wgpu::Renderer::new(&device, surface_format, None, 1);
 
-        // رندرر GPU صحنه + ثبت Texture آن در egui (شناسه ثابت می‌ماند)
         let scene = SceneRenderer::new(&device);
         let tex = egui_renderer.register_native_texture(
             &device,
@@ -166,7 +166,6 @@ impl State {
         self.surface.configure(&self.device, &self.config);
     }
 
-    /// true یعنی egui می‌خواهد فریم جدید رسم شود
     pub fn handle_event(&mut self, event: &winit::event::WindowEvent) -> bool {
         self.egui_state.on_window_event(&self.window, event).repaint
     }
@@ -204,7 +203,7 @@ impl State {
                 label: Some("Encoder"),
             });
 
-        // ۱) رندر GPU صحنه (فقط اگر UI درخواست داده باشد)
+
         if self.app.link.req.valid {
             self.app.link.req.valid = false;
             let res = self.scene.render(
@@ -226,7 +225,7 @@ impl State {
             self.app.link.draw_calls = res.draw_calls;
         }
 
-        // ۲) رسم egui
+
         for (id, delta) in &full_output.textures_delta.set {
             self.egui_renderer
                 .update_texture(&self.device, &self.queue, *id, delta);
